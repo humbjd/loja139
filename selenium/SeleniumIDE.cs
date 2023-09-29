@@ -14,12 +14,19 @@ using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium.Interactions;
 using NUnit.Framework;
+
+using WebDriverManager;
+using WebDriverManager.DriverConfigs.Impl;
+
 [TestFixture]
+// Atributos = Caracteristicas = Campos
+
 public class FluxoSimplesTest {
   private IWebDriver driver;
   public IDictionary<string, object> vars {get; private set;}
   private IJavaScriptExecutor js;
   [SetUp]
+  // Funções e Métodos
   public void SetUp() {
     driver = new ChromeDriver();
     js = (IJavaScriptExecutor)driver;
