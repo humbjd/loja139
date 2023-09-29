@@ -58,6 +58,10 @@
               "target": "Package",
               "version": "[4.12.4, )"
             },
+            "WebDriverManager": {
+              "target": "Package",
+              "version": "[2.17.1, )"
+            },
             "coverlet.collector": {
               "target": "Package",
               "version": "[3.2.0, )"
