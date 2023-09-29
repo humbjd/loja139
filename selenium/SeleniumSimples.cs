@@ -43,8 +43,20 @@ public void After(){
 public void Login(){
     // Abrir o navegador e acessar o site
     driver.Navigate().GoToUrl("https://www.saucedemo.com");
-    Thread.Sleep(2000); // Pausa forçada - remover antes de publicar
+    //Thread.Sleep(2000); // Pausa forçada - remover antes de publicar
 
+    // preencher o usuario
+    driver.FindElement(By.Id("user-name")).SendKeys("standard_user");
+    // preencher a senha 
+    driver.FindElement(By.Name("password")).SendKeys("secret_sauce");
+    // clicar no botão Login
+    driver.FindElement(By.CssSelector("input.submit-button.btn_action")).Click();
+
+    // Verificar se fizemos o login no sistema, confirmando um texto ancora
+    Assert.AreEqual(driver.FindElement(By.CssSelector("span.title")).Text, "Products");
+
+
+    Thread.Sleep(2000);
 
 
 
