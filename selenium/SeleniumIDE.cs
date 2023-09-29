@@ -31,6 +31,7 @@ public class FluxoSimplesTest {
     driver = new ChromeDriver();
     js = (IJavaScriptExecutor)driver;
     vars = new Dictionary<string, object>();
+    driver.Manage().Window.Maximize();
   }
   [TearDown]
   protected void TearDown() {
