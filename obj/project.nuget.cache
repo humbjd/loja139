@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "m47e7eYAs83RIC961qxCIm/AQJLe4JZfEn/BsUSFvVkZX09rveV5wLZgiwOxehpCCUAr/zVYpmkLu0rSn3qRsA==",
+  "dgSpecHash": "6RNCs4o2S4GoQijG+vgToGRv5nxgV5fnl8X5SfsmvKSXo6XyE3oxfoszMbPGe7+stM/WKXdmXg+jrYW57+Tb3Q==",
   "success": true,
-  "projectFilePath": "D:\\ESTUDO\\ITERASYS\\FTS139\\loja139\\loja139.csproj",
+  "projectFilePath": "d:\\ESTUDO\\ITERASYS\\FTS139\\loja139\\loja139.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hjdan\\.nuget\\packages\\anglesharp\\1.0.4\\anglesharp.1.0.4.nupkg.sha512",
     "C:\\Users\\hjdan\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",

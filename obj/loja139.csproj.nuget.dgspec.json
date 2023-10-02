@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ESTUDO\\ITERASYS\\FTS139\\loja139\\loja139.csproj": {}
+    "d:\\ESTUDO\\ITERASYS\\FTS139\\loja139\\loja139.csproj": {}
   },
   "projects": {
-    "D:\\ESTUDO\\ITERASYS\\FTS139\\loja139\\loja139.csproj": {
+    "d:\\ESTUDO\\ITERASYS\\FTS139\\loja139\\loja139.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ESTUDO\\ITERASYS\\FTS139\\loja139\\loja139.csproj",
+        "projectUniqueName": "d:\\ESTUDO\\ITERASYS\\FTS139\\loja139\\loja139.csproj",
         "projectName": "loja139",
-        "projectPath": "D:\\ESTUDO\\ITERASYS\\FTS139\\loja139\\loja139.csproj",
+        "projectPath": "d:\\ESTUDO\\ITERASYS\\FTS139\\loja139\\loja139.csproj",
         "packagesPath": "C:\\Users\\hjdan\\.nuget\\packages\\",
-        "outputPath": "D:\\ESTUDO\\ITERASYS\\FTS139\\loja139\\obj\\",
+        "outputPath": "d:\\ESTUDO\\ITERASYS\\FTS139\\loja139\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hjdan\\AppData\\Roaming\\NuGet\\NuGet.Config"
