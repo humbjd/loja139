@@ -11,13 +11,15 @@ using WebDriverManager.DriverConfigs.Impl;
 // 3 - Classe
 [TestFixture] // Configura como uma classe de teste
 public class AdicionarProdutoNoCarrinhoTest{
-// 3.1 - Atributos - Caracteristicas - Campos
-private IWebDriver driver; // objeto do Selenium WebDriver
+    private const string ClassnameToFind = ".span.title";
+
+    // 3.1 - Atributos - Caracteristicas - Campos
+    private IWebDriver driver; // objeto do Selenium WebDriver
 
 // 3.2 - Função ou Método de Apoio
 
 // Função de leitura do arquivo csv - massa de teste
-public static IEnumerable<TestCaseData> lerDadosDeTeste(){
+public static IEnumerable<TestCaseData> LerDadosDeTeste(){
 
     // declaramos um objeto chamdo reader que lê o conteúdo do csv
     using(var reader = new StreamReader(@"D:\ESTUDO\ITERASYS\FTS139\loja139\data\login.csv")){
@@ -74,7 +76,7 @@ public void Login(){
     driver.FindElement(By.CssSelector("input.submit-button.btn_action")).Click();
 
     // Verificar se fizemos o login no sistema, confirmando um texto ancora
-    Assert.AreEqual(driver.FindElement(By.CssSelector("span.title")).Text, "Products");
+    Assert.That("Products", Is.EqualTo(driver.FindElement(By.CssSelector("span.title")).Text));
 
 
     Thread.Sleep(2000);
@@ -84,7 +86,7 @@ public void Login(){
 }// Fim do Login
 
 // Login Positivo DDT
-[Test, TestCaseSource("lerDadosDeTeste")] // Indica que é um método de teste
+[Test, TestCaseSource(nameof(LerDadosDeTeste))] // Indica que é um método de teste
 public void LoginPositivoDDT(String usuario, String senha, String resultadoEsperado){
     // Abrir o navegador e acessar o site
     driver.Navigate().GoToUrl("https://www.saucedemo.com");
@@ -96,9 +98,9 @@ public void LoginPositivoDDT(String usuario, String senha, String resultadoEsper
     driver.FindElement(By.Name("password")).SendKeys(senha);
     // clicar no botão Login
     driver.FindElement(By.CssSelector("input.submit-button.btn_action")).Click();
-
+    Thread.Sleep(2000);
     // Verificar se fizemos o login no sistema, confirmando um texto ancora
-    Assert.AreEqual(driver.FindElement(By.CssSelector("span.title")).Text, resultadoEsperado);
+    Assert.That(resultadoEsperado, Is.EqualTo(driver.FindElement(By.CssSelector(ClassnameToFind)).Text));
 
 
     Thread.Sleep(2000);
